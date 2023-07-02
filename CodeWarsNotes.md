@@ -32,6 +32,18 @@ const getCharacters = (obj, key, val) => {
 }
 ```
 
+### return the number of consonents in the string str
+```js
+const consonantCount = (str) => {
+	let count = 0
+	for (const c of str) {
+		if ("BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz".indexOf(c) >= 0) count++
+	}
+	return count
+}
+```
+
+
 ##### Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
   - the "Set" constructor is like an array, but it only stores UNIQUE values. 
   - In this problem, pushing s1 + s2 to a Set will cause the operation to ignore repeated values. 
