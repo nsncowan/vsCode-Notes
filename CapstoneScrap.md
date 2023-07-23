@@ -72,7 +72,6 @@
           )}
         </Droppable>
     </React.Fragment>
-      
   );
 
 ```
